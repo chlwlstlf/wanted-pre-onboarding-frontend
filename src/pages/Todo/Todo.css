@@ -29,6 +29,7 @@
   width: 440px;
   height: 550px;
   margin-top: 20px;
+  padding-right: 8px;
   overflow-x: hidden;
 }
 .todo-list::-webkit-scrollbar {
@@ -37,13 +38,10 @@
 
 .todo-list::-webkit-scrollbar-thumb {
   height: 30%;
-  background-color: #304057;
+  background-color: #929292;
   border-radius: 10px;
 }
 
-.todo-list::-webkit-scrollbar-track {
-  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
-}
 /* List */
 .list {
   position: relative;
@@ -87,10 +85,6 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   top: 1px;
   left: 5px;
-}
-
-input[type="checkbox"]:checked .list {
-  opacity: 0.5;
 }
 
 .list button {
