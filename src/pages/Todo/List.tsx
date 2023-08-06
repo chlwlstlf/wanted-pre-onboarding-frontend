@@ -95,17 +95,13 @@ const List = (props: any) => {
           </div>
         ) : (
           <div className="todo-btn">
-            <div
-              className="todo-add"
-              style={{ width: "210px", marginTop: "3px" }}
-            >
+            <div className="todo-add-input">
               <input
                 data-testid="modify-input"
                 type="text"
                 onChange={onChangeText}
                 defaultValue={todo}
                 className="textinput"
-                style={{ width: "175px" }}
               />
             </div>
             <div>

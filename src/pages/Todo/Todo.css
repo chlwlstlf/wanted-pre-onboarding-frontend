@@ -57,10 +57,11 @@
 .list li {
   display: flex;
   height: 50px;
-  line-height: 50px;
+  line-height: 52px;
 }
 
 input[type="checkbox"] {
+  position: relative;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -79,12 +80,12 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked::after {
-  content: "\2713";
+  content: "\2714";
   color: white;
   font-size: 16px;
   position: absolute;
-  top: 1px;
-  left: 5px;
+  top: -3px;
+  left: 2px;
 }
 
 .list button {
@@ -109,4 +110,26 @@ input[type="checkbox"]:checked::after {
   display: flex;
   width: 360px;
   justify-content: space-between;
+}
+
+.todo-add-input {
+  position: relative;
+  display: inline-block;
+  width: 210px;
+  height: 20px;
+  line-height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 9px;
+  padding: 5px;
+}
+
+.todo-add-input input {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 175px;
+  margin: 1px 3px;
 }
